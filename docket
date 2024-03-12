@@ -10,7 +10,7 @@ docker --version
 DOCKER FILE 
 
 FROM amazonlinux
-MAINTAINER shashank.karigowda@gmail.com
+MAINTAINER chakradharmithun0330@gmail.com
 RUN yum update -y
 RUN yum install wget -y
 RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86.tar.gz
@@ -22,7 +22,7 @@ RUN sh apache-tomcat-9.0.86/bin/startup.sh
 
 //cmd to run the file docker build -t 
 
-shashank8617/webapp Dockerfile/
+chakrii03/webapp Dockerfile/
 
 DOCKER COMPOSE 
 
@@ -138,7 +138,7 @@ resource "aws_security_group" "example_sg" {
 resource "aws_instance" "example-1" {
   ami             = "ami-0187337106779cdf8"
   instance_type   = "t2.micro"
-  key_name        = "shashank"
+  key_name        = "windows"
   count           = 1
   subnet_id       = "subnet-0ff77d87097016ced"
   security_groups = ["aws_security_group"]
@@ -187,7 +187,7 @@ resource "aws_security_group" "example_sg" {
 resource "aws_instance" "example-1" {
   ami             = "ami-0187337106779cdf8"
   instance_type   = "t2.micro"
-  key_name        = "shashank"
+  key_name        = "windows"
   count           = 1
   subnet_id       = "subnet-0ff77d87097016ced"
   security_groups = [aws_security_group.example_sg.id]
