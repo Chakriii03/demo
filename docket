@@ -197,7 +197,7 @@ resource "aws_instance" "example-1" {
               sudo yum install -y httpd
               sudo systemctl start httpd
               sudo systemctl enable httpd
-              EOF
+              
 
 
   tags = {
